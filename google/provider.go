@@ -723,7 +723,7 @@ func ResourceMapWithErrors() (map[string]*schema.Resource, error) {
 			"google_dataproc_cluster_iam_binding":          ResourceIamBinding(IamDataprocClusterSchema, NewDataprocClusterUpdater, DataprocClusterIdParseFunc),
 			"google_dataproc_cluster_iam_member":           ResourceIamMember(IamDataprocClusterSchema, NewDataprocClusterUpdater, DataprocClusterIdParseFunc),
 			"google_dataproc_cluster_iam_policy":           ResourceIamPolicy(IamDataprocClusterSchema, NewDataprocClusterUpdater, DataprocClusterIdParseFunc),
-			"google_dataproc_job":                          resourceDataprocJob(),
+			"google_dataproc_stream":                       resourceDataprocJob(),
 			"google_dataproc_job_iam_binding":              ResourceIamBinding(IamDataprocJobSchema, NewDataprocJobUpdater, DataprocJobIdParseFunc),
 			"google_dataproc_job_iam_member":               ResourceIamMember(IamDataprocJobSchema, NewDataprocJobUpdater, DataprocJobIdParseFunc),
 			"google_dataproc_job_iam_policy":               ResourceIamPolicy(IamDataprocJobSchema, NewDataprocJobUpdater, DataprocJobIdParseFunc),
